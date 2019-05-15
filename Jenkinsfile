@@ -43,7 +43,7 @@ node{
                           //sh ("kubectl apply -f wordpress-volumeclaim.yaml")
 
                           // Create Contentful Service
-                                sh("kubectl apply -f .")
+                                sh("kubectl apply -k .")
                                 //sh("kubectl create -f wordpress.yaml")
                                 //sh ("kubectl get pod -l app=wordpress")
                                 //sh("kubectl create -f wordpress-service.yaml")
@@ -52,7 +52,7 @@ node{
                                 //sh('''while [ ''kubectl get pods -o=wide|grep Running | awk '{print "\$3"}''' != 'Running' ]; do kubectl get pod -l app=wordpress; sleep 5; done''')
 
                           // Check for Service
-                                sh("minikube service list")
+                                sh("minikube service wordpress --url")
                                 sh("kubectl get pods -o=wide")
                                 sh("NAME=`minikube service list|grep wordpress |awk '{print ''\$''6}'`")
                             }
