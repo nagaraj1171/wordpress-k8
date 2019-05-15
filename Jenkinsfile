@@ -55,7 +55,7 @@ node{
                                 sh("minikube service wordpress --url")
                                 sh("kubectl get pods -o=wide")
                                 sh("NAME=`minikube service list|grep wordpress |awk '{print ''\$''6}'`")
-                                sh("echo hostname")
+                                sh("hostname")
                             }
       }
   }
