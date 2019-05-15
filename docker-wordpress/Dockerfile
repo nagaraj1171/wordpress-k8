@@ -1,4 +1,5 @@
 FROM alpine:3.9
+USER root
 LABEL Maintainer="Tim de Pater <code@trafex.nl>" \
       Description="Lightweight WordPress container with Nginx 1.14 & PHP-FPM 7.2 based on Alpine Linux."
 
@@ -47,8 +48,8 @@ COPY wp-secrets.php /usr/src/wordpress
 RUN chown nobody.nobody /usr/src/wordpress/wp-secrets.php && chmod 640 /usr/src/wordpress/wp-secrets.php
 
 # Entrypoint to copy wp-content
-COPY entrypoint.sh /entrypoint.sh
-ENTRYPOINT [ "/entrypoint.sh" ]
+COPY entrypoint.sh /var/www/wp-content/entrypoint.sh
+ENTRYPOINT [ "/var/www/wp-content/entrypoint.sh" ]
 
 EXPOSE 80
 
