@@ -1,0 +1,2 @@
+# wordpressdemo
+# wordpress-k8
