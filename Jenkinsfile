@@ -4,7 +4,7 @@ node{
   def project = 'wordpress_app'
   def imageVersion = 'v2.0'
   def namespace = "${namespace_gui}"
-  def imageTag = "wordpress:Latest"
+  def imageTag = "wordpress:v10.1"
 
   //Checkout Code from Git
   checkout scm
