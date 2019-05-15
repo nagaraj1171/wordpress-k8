@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd948f92-aff9-4547-b3cb-863ccd7dfcd4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/kustomization.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wordpress-deployment.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql-services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/old-copy/mysql-services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql-volumeclaim.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/old-copy/mysql-volumeclaim.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/old-copy/mysql.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/old-copy/wordpress-service.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress-volumeclaim.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/old-copy/wordpress-volumeclaim.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/old-copy/wordpress.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +30,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wordpress.yaml">
+        <entry file="file://$PROJECT_DIR$/old-copy/wordpress.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="520">
               <caret line="36" column="44" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="44" />
@@ -32,17 +38,17 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kustomization.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="108">
-              <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+              <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysql.yaml">
+        <entry file="file://$PROJECT_DIR$/old-copy/mysql.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-24">
               <caret line="1" column="16" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="16" />
@@ -50,11 +56,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Jenkinsfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="59" column="3" lean-forward="true" selection-start-line="59" selection-start-column="3" selection-end-line="59" selection-end-column="3" />
+            <state relative-caret-position="279">
+              <caret line="45" column="54" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysql-deployment.yaml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wordpress-deployment.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -142,6 +162,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/old-copy" />
       <recent name="$USER_HOME$/Desktop/test/google-cloud" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -338,7 +359,7 @@
     <entry file="file://$PROJECT_DIR$/scripts/start.sh">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysql-services.yaml">
+    <entry file="file://$PROJECT_DIR$/old-copy/mysql-services.yaml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/../V02/django-cms/setup.py">
@@ -418,7 +439,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysql-volumeclaim.yaml">
+    <entry file="file://$PROJECT_DIR$/old-copy/mysql-volumeclaim.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
@@ -453,14 +474,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wordpress-volumeclaim.yaml">
+    <entry file="file://$PROJECT_DIR$/old-copy/wordpress-volumeclaim.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="29" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wordpress-service.yaml">
+    <entry file="file://$PROJECT_DIR$/old-copy/wordpress-service.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="14" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="14" />
@@ -502,31 +523,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysql.yaml">
+    <entry file="file://$PROJECT_DIR$/old-copy/mysql.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-24">
           <caret line="1" column="16" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wordpress.yaml">
+    <entry file="file://$PROJECT_DIR$/old-copy/wordpress.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
           <caret line="36" column="44" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kustomization.yaml">
+    <entry file="file://$PROJECT_DIR$/Jenkinsfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        <state relative-caret-position="279">
+          <caret line="45" column="54" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Jenkinsfile">
+    <entry file="file://$PROJECT_DIR$/mysql-deployment.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordpress-deployment.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="59" column="3" lean-forward="true" selection-start-line="59" selection-start-column="3" selection-end-line="59" selection-end-column="3" />
+        <state relative-caret-position="198">
+          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kustomization.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
         </state>
       </provider>
     </entry>
