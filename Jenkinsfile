@@ -29,8 +29,8 @@ node{
                 //sh("kubectl delete -f .")
                 sh("chmod +x run_destroy.sh")
                 sh("./run_destroy.sh")
-                sh('''docker rmi $(docker images -f 'dangling=true' -q) || true
-                    docker rmi $(docker images | sed 1,2d | awk '{print "\$3"}') || true''')
+                //sh('''docker rmi $(docker images -f 'dangling=true' -q) || true
+                    //docker rmi $(docker images | sed 1,2d | awk '{print "\$3"}') || true''')
             }
 
     //Stage 4 : Deploy Application
@@ -55,6 +55,7 @@ node{
                                 sh("minikube service wordpress --url")
                                 sh("kubectl get pods -o=wide")
                                 sh("NAME=`minikube service list|grep wordpress |awk '{print ''\$''6}'`")
+                                sh("echo hostname")
                             }
       }
   }
